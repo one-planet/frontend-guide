@@ -1,4 +1,4 @@
-## Shopping Cart Design
+## Storefront Design
 
 A real-life dtorefront designed with React/Typescript/Vitest.
 
