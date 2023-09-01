@@ -1,0 +1,18 @@
+.header {
+  background-color: #213547;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  opacity: 0.9;
+
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+
+    &:hover {
+      filter: drop-shadow(0 0 2em #646cffaa);
+    }
+  }
+}
