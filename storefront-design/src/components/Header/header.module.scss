@@ -6,13 +6,39 @@
   top: 0;
   position: fixed;
   opacity: 0.9;
+  height: 5em;
 
   .logo {
-    height: 6em;
-    padding: 1.5em;
+    height: 4em;
+    padding: 0.5em;
 
     &:hover {
       filter: drop-shadow(0 0 2em #646cffaa);
     }
+  }
+  .title{
+    font-size: x-large;
+  }
+}
+.container {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &:hover {
+    outline: 1px solid white;
+  }
+
+
+  .shoppingCart {
+    height: 4em;
+    padding: 0.5em;
+  }
+
+  .productsCount {
+    z-index: 1;
+    font-size: 2em;
+    top: 38px;
+    color: orange;
   }
 }
