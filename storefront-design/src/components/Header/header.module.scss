@@ -11,34 +11,25 @@
   .logo {
     height: 4em;
     padding: 0.5em;
+    cursor: pointer;
 
     &:hover {
       filter: drop-shadow(0 0 2em #646cffaa);
     }
   }
-  .title{
+  h3{
     font-size: x-large;
   }
-}
-.container {
-  border: none;
-  background: none;
-  cursor: pointer;
-
-  &:hover {
-    outline: 1px solid white;
-  }
-
-
-  .shoppingCart {
-    height: 4em;
-    padding: 0.5em;
-  }
-
-  .productsCount {
-    z-index: 1;
-    font-size: 2em;
-    top: 38px;
-    color: orange;
+  button{ 
+    border: none;
+    background: none;
+    cursor: pointer;
+    &:hover {
+      filter: 1px solid white;
+    }
+    .shoppingCart {
+      height: 4em;
+      padding: 0.5em;
+    }
   }
 }
