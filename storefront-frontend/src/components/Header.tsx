@@ -19,14 +19,9 @@ export const Header = (props: {
   };
   return (
     <header className="header">
-      <div>
-        <img
-          src={logo}
-          alt="Shopping Cart Application"
-          className="logo"
-          onClick={productsButton}
-        />
-      </div>
+      <button onClick={productsButton}>
+        <img src={logo} alt="Shopping Cart Application" className="logo" />
+      </button>
       <h3>{title}</h3>
       <button onClick={cartButton}>
         <img src={shoppingCart} alt="Go To Cart" className="logo" />

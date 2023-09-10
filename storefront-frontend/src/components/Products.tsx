@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import classes from "./styles.scss";
+import "./styles.scss";
 import thumbnail from "../assets/thumbnail.jpg";
 
 export const Products: FunctionComponent = () => {
