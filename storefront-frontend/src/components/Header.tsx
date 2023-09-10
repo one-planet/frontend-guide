@@ -1,5 +1,5 @@
 import logo from "/logo.svg";
-import classes from "./header.module.scss";
+import "./styles.scss";
 import shoppingCart from "../assets/shopping-cart.svg";
 import { useState } from "react";
 
@@ -18,18 +18,18 @@ export const Header = (props: {
     loadCartFunction();
   };
   return (
-    <header className={classes.header}>
+    <header className="header">
       <div>
         <img
           src={logo}
           alt="Shopping Cart Application"
-          className={classes.logo}
+          className="logo"
           onClick={productsButton}
         />
       </div>
       <h3>{title}</h3>
       <button onClick={cartButton}>
-        <img src={shoppingCart} alt="Go To Cart" className={classes.logo} />
+        <img src={shoppingCart} alt="Go To Cart" className="logo" />
       </button>
     </header>
   );

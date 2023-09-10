@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import classes from "./products.module.scss";
+import classes from "./styles.scss";
 import thumbnail from "../assets/thumbnail.jpg";
 
 export const Products: FunctionComponent = () => {
@@ -7,11 +7,7 @@ export const Products: FunctionComponent = () => {
   const title = "iPhone 9";
   const price = 109;
   const productList = products.map((id) => (
-    <div
-      key={id}
-      className={classes.product}
-      onClick={() => console.log("howdy")}
-    >
+    <div key={id} className="product" onClick={() => console.log("howdy")}>
       <img src={thumbnail} alt={title}></img>
       <h3>{title}</h3>
       <p>Price: ${price}</p>
@@ -20,8 +16,8 @@ export const Products: FunctionComponent = () => {
   ));
 
   return (
-    <section className={classes.productPage}>
-      <div className={classes.container}>{productList}</div>
+    <section className="productPage">
+      <div className="container">{productList}</div>
     </section>
   );
 };
