@@ -1,7 +1,7 @@
 import logo from "/logo.svg";
-import "./styles.scss";
 import shoppingCart from "../assets/shopping-cart.svg";
 import { useState } from "react";
+import { AppBar, Button, Toolbar, Typography } from "@material-ui/core";
 
 export const Header = (props: {
   loadCartFunction: () => void;
@@ -18,14 +18,26 @@ export const Header = (props: {
     loadCartFunction();
   };
   return (
-    <header className="header">
-      <button onClick={productsButton}>
-        <img src={logo} alt="Shopping Cart Application" className="logo" />
-      </button>
-      <h3>{title}</h3>
-      <button onClick={cartButton}>
-        <img src={shoppingCart} alt="Go To Cart" className="logo" />
-      </button>
-    </header>
+    <AppBar>
+      <Toolbar
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Button onClick={productsButton}>
+          <img
+            src={logo}
+            alt="Shopping Cart Application"
+            style={{ width: "50px", height: "50px" }}
+          />
+        </Button>
+        <Typography variant="h6">{title}</Typography>
+        <Button onClick={cartButton}>
+          <img src={shoppingCart} alt="Go To Cart" />
+        </Button>
+      </Toolbar>
+    </AppBar>
   );
 };
